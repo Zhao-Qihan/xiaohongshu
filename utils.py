@@ -11,9 +11,9 @@ def generate_xiaohongshu(subject, api_key):
         ("human", user_template)
     ])
 
-    model = ChatOpenAI(model="moonshot-v1-8k",
+    model = ChatOpenAI(model="qwen-plus",
                        openai_api_key=api_key,
-                       openai_api_base="https://api.moonshot.cn/v1")
+                       openai_api_base="https://dashscope.aliyuncs.com/compatible-mode/v1")
 
     output_parser = PydanticOutputParser(pydantic_object=Xiaohongshu)
     parser_instructions = output_parser.get_format_instructions()
