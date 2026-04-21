@@ -5,6 +5,7 @@ st.header("小红书文案AI写作助手~ 📝")
 
 with st.sidebar:
     openai_api_key = st.text_input("请输入API密钥：", type="password")
+    st.markdown("[获取API密钥](https://www.aliyun.com/product/bailian)")
 
 subject = st.text_input("主题")
 submit = st.button("开始写作")
